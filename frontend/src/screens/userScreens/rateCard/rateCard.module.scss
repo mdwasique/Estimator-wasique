@@ -1,0 +1,109 @@
+.layout {
+  border: 2px solid #00bdd6;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: fit-content;
+  min-width: 1200px;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: scroll;
+  .sidebar {
+    width: 20%;
+    min-height: 100vh;
+    height: 100%;
+    border: 2px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    width: 80%;
+    min-height: 100vh;
+    height: fit-content;
+    border: 1px solid brown;
+
+    .link {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 20px;
+
+      span {
+        color: #565e6c;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+    .navigate {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: fit-content;
+
+      h2 {
+        flex: 1;
+        margin-bottom: 30px;
+      }
+
+      div {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        height: fit-content;
+        flex: 1;
+
+        .button2 {
+          width: 18%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+          background-color: #00bdd6;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          height: 32px;
+          color: #fff;
+          font-size: 12px;
+          padding: 0px 15px;
+          cursor: pointer;
+        }
+        .button1 {
+          width: 18%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+          background-color: #c8f9ff;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          height: 32px;
+          color: #006d7c;
+          font-size: 12px;
+          padding: 0px 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.customHeader {
+  font-size: 15px;
+  font-weight: 900;
+  color: #06328c;
+}
